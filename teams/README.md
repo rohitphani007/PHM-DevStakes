@@ -1,4 +1,4 @@
-# CurioCity
+# CurioCity - Link https://devstakes-project.vercel.app/
 
 CurioCity is a premium, AI-enhanced geographical discovery engine built for hackathon-grade storytelling.
 It helps users explore any place in the world, discover nearby obscure lore from Wikipedia, visualize geography on an interactive 2D/3D map, and transform dry facts into engaging narratives.
