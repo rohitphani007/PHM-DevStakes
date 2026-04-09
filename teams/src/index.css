@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #f4f4f5;
+  background: #09090b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #09090b;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: linear-gradient(
+    155deg,
+    rgba(32, 32, 35, 0.75) 0%,
+    rgba(18, 18, 20, 0.72) 100%
+  );
+  backdrop-filter: blur(10px);
+}
+
+.theme-light .glass-card {
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(248, 250, 252, 0.76) 100%
+  );
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(24, 24, 27, 0.5);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(234, 179, 8, 0.42);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 179, 8, 0.65);
+}
+
+.theme-light .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(226, 232, 240, 0.8);
+}
+
+.curio-popup .maplibregl-popup-content {
+  border: 1px solid rgba(234, 179, 8, 0.35);
+  border-radius: 0.7rem;
+  background: rgba(9, 9, 11, 0.95);
+  color: #f4f4f5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.curio-popup .maplibregl-popup-tip {
+  border-top-color: rgba(9, 9, 11, 0.95);
+}
+
+.theme-light .curio-popup .maplibregl-popup-content {
+  background: rgba(255, 255, 255, 0.98);
+  color: #111827;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+}
+
+.theme-light .curio-popup .maplibregl-popup-tip {
+  border-top-color: rgba(255, 255, 255, 0.98);
+}
